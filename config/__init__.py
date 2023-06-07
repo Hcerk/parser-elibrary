@@ -1,4 +1,5 @@
 ﻿from .paths import PARENT_PATH, CHROME_DRIVER_EXE
+from .paths import DEBUG_PATH
 from .paths import INPUT_PATH_FILE
 from .paths import OUTPUT_PATH_FILE
 

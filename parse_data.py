@@ -69,7 +69,10 @@ def parse_article(search_name: str):
         print(search_name + ' = Не найдена ссылка')
         return
 
-    return __parse_article_data(url)
+    article_data: dict = __parse_article_data(url)
+    article_data['article_name'] = search_name
+
+    return article_data
 
 
 def __parse_article_data(article_url: str):

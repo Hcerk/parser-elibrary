@@ -4,6 +4,8 @@ PARENT_PATH = os.path.dirname(os.path.abspath(__name__))
 
 CHROME_DRIVER_EXE = PARENT_PATH + '\\browser\\chromedriver.exe'
 
+DEBUG_PATH = PARENT_PATH + '\\debug'
+
 INPUT_PATH = PARENT_PATH + '\\input'
 OUTPUT_PATH = PARENT_PATH + '\\output'
 
