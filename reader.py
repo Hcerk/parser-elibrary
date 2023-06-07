@@ -42,7 +42,7 @@ class Reader:
 
             article['users'] = users
 
-        resuilt_json = json.dumps(articles, indent=4)
+        resuilt_json = json.dumps(articles, indent=4, ensure_ascii=False)
 
         date_string = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
         with open(OUTPUT_PATH_FILE.format(date=date_string), "w", encoding="utf8") as f:

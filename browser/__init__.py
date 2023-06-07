@@ -43,6 +43,9 @@ def pause_on_captcha_page():
 
 
 def pause_on_loading_page():
+    pause_on_captcha_page()
+
+    time.sleep(0.3)
     elements = browser.find_elements(By.ID, 'loading')
 
     if len(elements) == 0:

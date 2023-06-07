@@ -86,7 +86,7 @@ def search_article(html: str) -> str | None:
     table: BeautifulSoup = soup.find('table', {'id': 'restab'})
 
     if table is None:
-        raise Exception("Ошибка в парсинге")
+        raise Exception("ъОшибка в парсинге")
 
     links: ResultSet = table.find_all('a')
 
