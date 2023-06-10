@@ -150,6 +150,11 @@ def search_article_data(html: str):
             if 'Импакт-фактор журнала в РИНЦ' in td.text and 'Норм. цитируемость по журналу' in td.text:
                 continue
 
+            if 'Цитирований в РИНЦ' in td.text:
+                font: BeautifulSoup = td.find('font')
+
+                response['citation_in_rinc'] = font.text
+
             if 'Импакт-фактор журнала в РИНЦ' in td.text:
                 font: BeautifulSoup = td.find('font')
 
